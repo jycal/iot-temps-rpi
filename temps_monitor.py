@@ -4,8 +4,9 @@ import requests
 from sense_hat import SenseHat
 
 updateInterval = 300  # update once every 5 minutes
-writeAPIkey = "OY8DUS7XDPAU2KTT"  # write API key for the channel
-channelID = "2003669"  # channel ID
+writeAPIkey = 'OY8DUS7XDPAU2KTT'  # write API key for the channel
+readAPIkey = 'TXI2BWJFGPTIVELP'  # read API key for the channel
+channelID = '2003669'  # channel ID
 # ThingSpeak url
 URL = "https://api.thingspeak.com/update?api_key=OY8DUS7XDPAU2KTT"
 
@@ -19,7 +20,8 @@ def sensorData():
     # command to get the CPU temperature
     cmd = 'cat /sys/class/thermal/thermal_zone0/temp'
     process = os.popen(cmd).readline().strip()
-    cpu_temp = int(process.split('=')[0].split("'")[0]) / 1000  # get the CPU temperature
+    cpu_temp = int(process.split('=')[0].split(
+        "'")[0]) / 1000  # get the CPU temperature
     temp = sense_temp - (cpu_temp - sense_temp)
 
     return temp
@@ -27,7 +29,7 @@ def sensorData():
 
 def getData():
     """Function that returns the data from the ThingSpeak channel"""
-    URL = "https://api.thingspeak.com/channels/" + channelID + "/feeds.json?api_key=" + writeAPIkey + "&results=8000"
+    URL = "https://api.thingspeak.com/channels/" + channelID + "/feeds.json?api_key=" + readAPIkey + "&results=8000"
     response = requests.get(URL)
     if response:
         print('GET Succes!')
