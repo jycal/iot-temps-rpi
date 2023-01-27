@@ -7,8 +7,6 @@ updateInterval = 300  # update once every 5 minutes
 writeAPIkey = 'OY8DUS7XDPAU2KTT'  # write API key for the channel
 readAPIkey = 'TXI2BWJFGPTIVELP'  # read API key for the channel
 channelID = '2003669'  # channel ID
-# ThingSpeak url
-URL = "https://api.thingspeak.com/update?api_key=OY8DUS7XDPAU2KTT"
 
 
 def sensorData():
@@ -64,7 +62,7 @@ def postData():
         stats = '&field2=' + str(avgTemp) + '&field3=' + str(minTemp) + '&field4=' + str(maxTemp)
         fields = '&field1=' + str(temp) + stats
 
-    response = requests.post(URL + fields)
+    response = requests.post('https://api.thingspeak.com/update?api_key=' + writeAPIkey + fields)
     if response:
         print('POST Succes!')
     else:
