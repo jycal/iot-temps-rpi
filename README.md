@@ -85,7 +85,13 @@ Updating my GitHub repository was something I did once I was done or satisfied w
 
 ## Conclusion
 
-Using the Sense HAT was quite an adventure due to the fact it has inaccurate readings when not calibrating the readings. I learned a lot about the Sense HAT and how to work with ThingSpeak to send data and retrieve data. I think I could've improved the readings by modifying the Sense HAT postion to be elevated enought to not be afflicted by the CPU temperature could help in theory, but I'm pleased enough to have made a somewhat accurate Data Science IoT device because it retrieves temperature from a sensor, it processes the data and sends it to an API to be visualized so that you can judge whether or not adjust temperature. 
+Using the Sense HAT was quite an adventure due to the fact it has inaccurate readings when not calibrating the readings. I learned a lot about the Sense HAT and how to work with ThingSpeak to send data and retrieve data. I think I could've improved the readings by modifying the Sense HAT postion to be elevated enought to not be afflicted by the CPU temperature could help in theory, but I'm pleased enough to have made a somewhat accurate Data Science IoT device because it retrieves temperature from a sensor, it processes the data and sends it to an API to be visualized so that you can judge whether or not adjust room temperature. 
+
+## Video Demo
+
+https://user-images.githubusercontent.com/98151689/215357249-e6299b84-172c-4dad-9fe8-b3b0c70537de.mp4
+
+*Music: Untitled by Horse Lords - From the Free Music Archive, CC BY-NC-ND 4.0*
 
 ## Tutorial
 
