@@ -89,7 +89,7 @@ Using the Sense HAT was quite an adventure due to the fact it has inaccurate rea
 
 ## Video Demo
 
-https://user-images.githubusercontent.com/98151689/215357249-e6299b84-172c-4dad-9fe8-b3b0c70537de.mp4
+https://user-images.githubusercontent.com/98151689/215357620-1f8b1f82-5697-4525-bf4e-43667307dfb5.mp4
 
 *Music: Untitled by Horse Lords - From the Free Music Archive, CC BY-NC-ND 4.0*
 
